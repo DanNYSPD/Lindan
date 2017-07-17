@@ -13,6 +13,7 @@ class MysqlConnection {
     private $userPassword = null;
     private $databaseName = null;
     private $mysqli = null;
+    private $port='';
 
     const MODE_ASSOC = "MODE_ASSOC";
     const MODE_NUM = "MODE_NUM";

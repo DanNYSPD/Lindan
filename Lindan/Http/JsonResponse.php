@@ -35,9 +35,15 @@ class JsonResponse extends Response {
     }
 
     function errorResponse($msj, $code = 404) {
-        echo json_encode($msj);
-        http_response_code($code);
-        die();
+        if(is_array($msj)){
+            echo json_encode($msj);
+            http_response_code($code);
+            die();
+        }else{
+            echo json_encode(array("msj"=>$msj));
+            http_response_code($code);
+            die();
+        }
     }
 
 }
