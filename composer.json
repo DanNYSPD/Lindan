@@ -1,0 +1,19 @@
+{
+    "name": "lindan/data",
+    "description": "Database library for conexions",
+    "authors": [
+        {
+            "name": "Daniel Hernandez",
+            "email": "daniel.hernandez.job@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lindan\\Data\\": "src/"
+        }
+    }
+}
